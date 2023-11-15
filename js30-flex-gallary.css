@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
 }
 body {
   background-image: url("/background image.jpg");
@@ -13,10 +14,48 @@ body {
   justify-content: center;
   backdrop-filter: blur(10px);
 }
-.container{
-    width: 60vw;
-    height: 80vh;
-    background-color: white;
-    display: flex;
+.container {
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+  display: flex;
 }
-.pane
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.panel1 {
+  background-image: url("/first\ img.jpg");
+  background-size: cover;
+  filter: brightness(5%);
+}
+.panel2 {
+  background-image: url("/second\ img.jpg");
+  background-size: cover;
+  filter: brightness(5%);
+}
+.panel3 {
+  background-image: url("/third\ img.jpg");
+  background-size: cover;
+  filter: brightness(5%);
+}
+.panel4 {
+  background-image: url("/forth\ img.jpg");
+  background-size: cover;
+  filter: brightness(5%);
+}
+.panel1:hover {
+    filter: brightness(15%);
+  }
+.panel2:hover {
+    filter: brightness(15%);
+  }
+.panel3:hover {
+    filter: brightness(15%);
+  }
+.panel4:hover {
+    filter: brightness(15%);
+  }
