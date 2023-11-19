@@ -14,11 +14,16 @@ body {
   justify-content: center;
   backdrop-filter: blur(10px);
 }
+p{
+  color: rgb(255, 255, 255);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 3rem;
+}
 .container {
   width: 60vw;
   height: 80vh;
-  background-color: white;
   display: flex;
+  gap: 1rem;
 }
 .panel {
   flex: 1;
@@ -26,6 +31,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.1rem red;
 }
 .panel1 {
   background-image: url("/first\ img.jpg");
@@ -48,14 +55,27 @@ body {
   filter: brightness(5%);
 }
 .panel1:hover {
-    filter: brightness(15%);
-  }
+  filter: brightness(15%);
+}
 .panel2:hover {
-    filter: brightness(15%);
-  }
+  filter: brightness(15%);
+}
 .panel3:hover {
-    filter: brightness(15%);
-  }
+  filter: brightness(15%);
+}
 .panel4:hover {
-    filter: brightness(15%);
-  }
+  filter: brightness(15%);
+}
+
+.active {
+  filter: brightness(100%) !important;
+  flex: 2;
+}
+.first:first-child{
+  translate: 0px -12rem;
+  color: rgb(0, 0, 0);
+}
+.last:last-child{
+  translate: 0px 12rem;
+  color: rgb(0, 0, 0);
+}
