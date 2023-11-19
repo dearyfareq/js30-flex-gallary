@@ -1,9 +1,11 @@
+/* normalizing screen */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.5s ease-in-out;
 }
+/* body as flex and background with filter */
 body {
   background-image: url("/background image.jpg");
   background-size: cover;
@@ -14,7 +16,8 @@ body {
   justify-content: center;
   backdrop-filter: blur(10px);
 }
-p{
+/* text color and font with size */
+p {
   color: rgb(255, 255, 255);
   font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 3rem;
@@ -25,6 +28,7 @@ p{
   display: flex;
   gap: 1rem;
 }
+/* main panel as flex */
 .panel {
   flex: 1;
   display: flex;
@@ -34,6 +38,7 @@ p{
   overflow: hidden;
   box-shadow: 0.1rem 0.1rem red;
 }
+/* panels */
 .panel1 {
   background-image: url("/first\ img.jpg");
   background-size: cover;
@@ -54,6 +59,7 @@ p{
   background-size: cover;
   filter: brightness(5%);
 }
+/* panels */
 .panel1:hover {
   filter: brightness(15%);
 }
@@ -66,16 +72,17 @@ p{
 .panel4:hover {
   filter: brightness(15%);
 }
-
+/* class to toggle when clicked */
 .active {
   filter: brightness(100%) !important;
   flex: 2;
 }
-.first:first-child{
+/* class to add to text */
+.first:first-child {
   translate: 0px -12rem;
   color: rgb(0, 0, 0);
 }
-.last:last-child{
+.last:last-child {
   translate: 0px 12rem;
   color: rgb(0, 0, 0);
 }
